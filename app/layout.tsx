@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <div className="bg-gray-100 dark:bg-zinc-900 transition-all duration-700">
+        <div className="bg-gray-100 dark:bg-zinc-900 transition-all duration-700 min-h-screen">
           <Providers>
             <Header />
             <Suspense fallback={<Loading />}>
