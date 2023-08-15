@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import "../styles/globals.css";
 import Header from "./components/Header";
 import Providers from "./components/Providers";
+import Loading from "./search/loading";
 
 export const metadata = {
   title: "Karge's News",
@@ -18,7 +20,9 @@ export default function RootLayout({
         <div className="bg-gray-100 dark:bg-zinc-900 transition-all duration-700">
           <Providers>
             <Header />
-            <div className="max-w-6xl mx-auto">{children}</div>
+            <Suspense fallback={<Loading />}>
+              <div className="max-w-6xl mx-auto">{children}</div>
+            </Suspense>
           </Providers>
         </div>
       </body>

@@ -12,7 +12,7 @@ export default function ArticlePage({ searchParams }: Props) {
   )
     return notFound();
 
-  const article: Article = searchParams;
+  const article: Article = searchParams || {};
 
   return (
     <article className="mt-8">
