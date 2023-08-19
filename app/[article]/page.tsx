@@ -33,7 +33,7 @@ export default function ArticlePage({ searchParams }: Props) {
           <div className="flex divide-x-2 space-x-4">
             <h2 className="font-bold">By: {article.source}</h2>
             <h2 className="font-bold pl-4">Source: {article.source}</h2>
-            <p className="pl-4">
+            <p className="pl-4 min-w-[8rem]">
               <LiveTimestamp time={article.published_at} />
             </p>
           </div>
