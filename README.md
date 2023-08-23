@@ -3,7 +3,7 @@
 Project powered by Next.js, it's all about fetching media news from an Mediastack Api. Data goes through Stepzen platform and returns GraphQL data in formatted and easy to use way.
 Is has a searching media by a query feature and also a dark mode.
 
-# Environment 📟
+## Environment 📟
 
 Node: 18.14.1
 React: 18.2
